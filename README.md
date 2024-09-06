@@ -1,7 +1,7 @@
 ## CODE SUMMARY
 
 This code defines a custom Convolutional Neural Network (CNN) architecture using PyTorch, with a complete pipeline for training and testing the model on a dataset. 
-The CustomCNN class, which inherits from torch.nn.Module, consists of four convolutional layers, each followed by batch normalization, Leaky ReLU activation, and max pooling layers to downsample feature maps. 
+The CustomCNN class, which inherits from `torch.nn.Module`, consists of four convolutional layers, each followed by batch normalization, Leaky ReLU activation, and max pooling layers to downsample feature maps. 
 After these layers, the feature maps are flattened, and a fully connected layer with dropout is applied to produce the final output. 
 
 
@@ -11,7 +11,6 @@ The results from each epoch, including training and test loss as well as accurac
 
 
 Additionally, the AdamW optimizer is employed, along with a ReduceLROnPlateau scheduler, to adjust the learning rate when validation loss plateaus. 
-The training loop is encapsulated in the train function, running for a set number of epochs and returning the results for further analysis.
 
 
 
